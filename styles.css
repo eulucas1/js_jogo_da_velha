@@ -1,0 +1,144 @@
+body{
+    background: #ADC4CE;
+    color: #526D82;
+    font-family: serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+#container{
+    margin: 5% auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box{
+    display: inline-block;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+span{
+    position: absolute;
+    font-size: 75px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 5px;
+    margin-left: -35px;
+}
+
+.topo{
+    border-top: none;
+}
+
+.base{
+    border-bottom: none;
+}
+
+.esquerdo{
+    border-left: none;
+}
+
+.direito{
+    border-right: none;
+}
+
+.alert{
+    height: 75px;
+    width: 125px;
+    display: inline-block;
+    background: #DCD7C9;
+    position: relative;
+    z-index: 10;
+    margin-top: -50%;
+    border-radius: 20px;
+    animation: larger 0.5s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 30px;
+    bottom: 50px;
+    top: 0;
+}
+
+button{
+    background: gray;
+    border-radius: 2px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+button:focus{
+    background: #A3C7D6;
+}
+
+.casaAtiva{
+    background: #A3C7D6;
+}
+
+@keyframes larger{
+    from{
+        height: 75px;
+        width: 125px;
+    }
+
+    to{
+        height: 100px;
+        width: 250px;
+    }
+
+}
+
+#placar {
+    font-family: serif; 
+    font-size: 2rem;
+}
+
+.placar-item {
+    display: inline-block;
+    margin-right: 20px; 
+    font-family: serif; 
+    font-size: 2rem;
+}
+
+
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #526D82;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #526D82;
+}
